@@ -25,7 +25,7 @@ body {
 }
 .font-o {
 	font-family: var(--font-Oswald);
-	font-size: 22px;
+	font-size: 26px;
 }
 .border-b {
 	border-bottom: 1px solid var(--color-white);
@@ -95,6 +95,7 @@ body {
 	font-family: var(--font-Poppins);
 	border: 1px solid var(--color-lightgrey);
 	outline: none;
+	width: 242px;
 }
 .set-navbar-top .form-control::placeholder {
 	color: var(--color-lightgrey);
@@ -126,7 +127,7 @@ body {
 	border-radius: 8px;
 }
 .set-inner-card-padd {
-	border: var(--set-border);
+/*	border: var(--set-border);*/
 
 }
 .set-inner-card-padd h1 {
@@ -191,18 +192,20 @@ body {
 	font-size: 32px;
 }
 .set-view-list {
-	background-color: var(--color-red);
-	color: var(--color-white);
-	font-size: 12px;
+	background-color: #f7f7f7;
+	color: var(--color-black);
+	font-size: 11px;
 	font-family: var(--font-Poppins);
-	padding: 8px 12px;
+	padding: 2px 6px;
 	border-radius: 25px;
-	height: 34px;
-	height: 100%;
-	font-weight: 500;
+	font-weight: 900;
 	flex-shrink: 0;
 	min-width: 102px;
 	text-align: center;
+	border: 2px solid var(--color-red);
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .set-list-all a {
 	text-decoration: none;
@@ -233,15 +236,17 @@ body {
 .checked {
   color: var(--color-red);
 }
-.set-star-rating .fa-star {
-	font-size: 14px;
+.set-star-rating .fa-star, .fa-star {
+	font-size: 24px !important;
 }
 .set-font-sm {
 	font-size: 15px;
 }
 .set-font-hours {
-	font-size: 15px;
-	text-decoration: underline;
+	font-size: 13px;
+	background-color: #ededef;
+	padding: 4px 12px;
+	border-radius: 8px;
 }
 /******************************/
 /*FOOTER*/
@@ -343,7 +348,7 @@ body {
 	border-radius: 0px;
 }
 .set-btn-black {
-	padding: 6px 32px;
+	padding: 6px 12px;
 	background-color: var(--color-red);
 	color: var(--color-white) !important;
 	font-family: var(--font-Oswald);
@@ -353,15 +358,24 @@ body {
 	border: 2px solid var(--color-red);
 	border-radius: 8px;
 	transition: .3s;
-	min-height: 58px;
+	min-height: 42px;
 	display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
 }
 .set-btn-black:hover {
 	transition: .3s;
 	background-color: var(--color-white);
 	color: var(--color-black) !important;
+}
+.set-btn-outline {
+	background-color: var(--color-white);
+	color: var(--color-black) !important;
+}
+.set-btn-outline:hover {
+	background-color: var(--color-red);
+	color: var(--color-white) !important;
 }
 .set-border-1px {
 	border: 1px solid var(--color-lightgrey);
@@ -381,10 +395,10 @@ body {
 .social-icons {
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid var(--color-grey);
+/*	border: 1px solid var(--color-grey);*/
 }
 .social-icons a {
-	padding: 12px 6px;
+	padding: 12px 6px 0px 6px;
 	color: var(--color-red);
 	text-decoration: none;
 }
@@ -422,6 +436,62 @@ body {
 .set-cart-js-sm .apexcharts-legend-text, .set-cart-js-sm .apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
 	display: none;
 }
+.font-o-sm {
+	font-size: 22px;
+}
+/*INPUT*/
+.set-label-overlay {
+	position: absolute;
+  left: 14px;
+  top: -12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0px 18px;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: var(--color-white);
+}
+.set-input-self {
+	display: block;
+	border-radius: 8px;
+	padding: 12px;
+	height: 42px;
+	font-size: 15px;
+	width: 100%;
+	border: 2px solid var(--color-black);
+	font-family: var(--font-Poppins);
+	outline: none;
+	background-color: #f7f7f7;
+}
+.set-textarea-self {
+	display: block;
+	border-radius: 8px;
+	padding: 14px;
+	font-size: 15px;
+	width: 100%;
+	border: 2px solid var(--color-black);
+	font-family: var(--font-Poppins);
+	outline: none;
+	background-color: #f7f7f7;
+}
+.set-inline-block-h3 {
+	border-bottom: 3px solid var(--color-black);
+	display: inline-block;
+}
+.set-contact-main {
+	font-size: 14px;
+}
+.set-width-extra {
+	width: 100%;
+}
+.f-13-b {
+	font-size: 13px;
+}
+.f-11-w {
+	font-size: 11px;
+}
+
 @media only screen and (max-width: 1024px) {
 	.set-direction-row {
 		flex-direction: column;
