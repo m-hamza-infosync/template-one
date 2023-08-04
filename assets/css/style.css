@@ -173,7 +173,10 @@ body {
 	color: var(--color-black);
 	transition: .3s;
 }
+.active {
+	border-bottom: 1px solid var(--color-white);
 
+}
 /******************************/
 /*SIMILAR TRENDING*/
 /******************************/
