@@ -69,7 +69,9 @@ body {
 /***************************/
 .set-navbar-top {
 	background-color: var(--color-nearblack);
+	background-color: #02091c;
 	box-shadow: -1px 14px 50px -10px rgba(35, 35, 35, 0.1);
+	padding: 12px 0px;
 }
 .set-navbar-top .navbar-brand {
 	font-family: var(--font-Oswald);
@@ -78,24 +80,52 @@ body {
 }
 .set-navbar-top .nav-item .nav-link {
 	font-family: var(--font-Poppins);
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	color: var(--color-lightgrey);
 }
 .set-navbar-top .nav-item .nav-link:hover {
 	color: var(--color-white);
 }
-.set-navbar-top .form-control {
-	background-color: var(--color-grey);
+.set-navbar-top .set-select-my-important {
+	background-color: var(--color-nearblack);
 	height: 40px;
 	border-radius: 8px;
 	padding: 10px;
-	color: var(--color-lightgrey);
-	font-size: 14px;
+	color: var(--color-white);
+	font-size: 16px;
 	font-family: var(--font-Poppins);
 	border: 1px solid var(--color-lightgrey);
 	outline: none;
 	width: 242px;
+	font-weight: 300 !important;
+}
+.set-navbar-top .set-select-my-important option {
+	font-size: 15px;
+	font-weight: 300;
+}
+
+
+/* width */
+.set-navbar-top .set-select-my-important::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.set-navbar-top .set-select-my-important::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 6px;
+}
+ 
+/* Handle */
+.set-navbar-top .set-select-my-important::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+.set-navbar-top .set-select-my-important::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 .set-navbar-top .form-control::placeholder {
 	color: var(--color-lightgrey);
@@ -116,8 +146,24 @@ body {
 	font-size: 14px;
 	margin-left: 8px;
 }
-
-
+.set-bg-img {
+	background-image: url('../images/bg-banner.jpg');
+	height: 446px;
+	background-size: 100% 100%;
+}
+.set-banner-padding {
+	padding: 10px;
+	font-size: 15px;
+	color: grey;
+	padding-right: 32px;
+	border: 2px solid var(--color-red);
+}
+.set-banner-padding:focus {
+	box-shadow: none !important;
+}
+.set-font-heading {
+	font-weight: 700;
+}
 /***************************/
 /*CENTER SECTION*/
 /***************************/
@@ -162,11 +208,11 @@ body {
 	height: 44px;
 	border: 2px solid var(--color-cream);
 	outline: none;
-	border-radius: 0px;
+	border-radius: 8px;
 	padding: 6px 22px;
 	transition: .3s;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
 }
 .set-btn-cream:hover {
 	background-color: var(--color-cream);
@@ -493,6 +539,63 @@ body {
 }
 .f-11-w {
 	font-size: 11px;
+}
+
+/*DYNAMIC STAR RATING*/
+.success-box {
+  margin: 0;
+  padding:4px;
+  border:1px solid #eee;
+  background:#f9f9f9;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 100%;
+  display: none;
+  line-break: 14px;
+}
+
+.success-box img {
+  margin-right:10px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.success-box > div {
+  vertical-align:top;
+  display:inline-block;
+  color:#888;
+}
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  margin-bottom: 0px;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+.set-check-circle {
+	font-size: 28px;
+	color: #6AC259;
 }
 
 @media only screen and (max-width: 1024px) {
